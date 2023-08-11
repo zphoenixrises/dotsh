@@ -3149,11 +3149,11 @@ EOF
             dotfiles_repos=(${DOTFILES_REPOS})
         };
     fi;
-    : "${DOTFILES_SHELL:=fish}";
+    : "${DOTFILES_SHELL:=zsh}";
     declare -r fish_confd_dir="$HOME/.config/fish/conf.d";
     declare -r fish_hist_file="$HOME/.local/share/fish/fish_history";
     declare fish_plugins+=(PatrickF1/fzf.fish jorgebucaran/fisher axonasif/bashenv.fish);
-    : "${DOTFILES_TMUX:=true}";
+    : "${DOTFILES_TMUX:=yes}";
     : "${DOTFILES_TMUX_VSCODE:=true}";
     declare -r tmux_first_session_name="gitpod";
     declare -r tmux_first_window_num="1";

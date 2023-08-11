@@ -26,7 +26,7 @@ if test -n "${DOTFILES_REPOS:-}"; then {
 # = SHELL                                         =
 # =================================================
 # Defaults to fish
-: "${DOTFILES_SHELL:=fish}";
+: "${DOTFILES_SHELL:=zsh}";
 # =================================================
 # = FISH SHEL                                     =
 # =================================================
@@ -43,7 +43,7 @@ declare fish_plugins+=(
 # = TMUX OPTIONS                                  =
 # =================================================
 # Tmux is enabled by default.
-: "${DOTFILES_TMUX:=true}";
+: "${DOTFILES_TMUX:=yes}";
 # Tmux integration for VSCode
 : "${DOTFILES_TMUX_VSCODE:=true}";
 declare -r tmux_first_session_name="gitpod";
